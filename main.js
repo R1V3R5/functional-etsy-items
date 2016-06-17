@@ -41,3 +41,18 @@ var currencyCode = currency.map(function(item) {
 
 //---------------4-------------------------------
 //Display a list of all items who are made of wood.
+
+var wood = items.filter(function(item) {
+  var material = item.materials
+  if (material.includes("wood")) {
+    return item;
+  }
+});
+
+var itemsWithWood = wood.map(function(item) {
+  return (item.title + " is made of wood!");
+});
+
+
+//-------------5-----------------------------------
+//Which items are made of eight or more materials? Display the name, number of items and the items it is made of.
