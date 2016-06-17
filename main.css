@@ -1,0 +1,23 @@
+.container {
+  width: 1100px;
+  /*margin: 0 auto;*/
+}
+.answer {
+  /*margin-top: 10px;*/
+  min-height: 50px;
+  background: rgb(238, 238, 238)
+}
+.banner img {
+  width: 1100px;
+  height: 130px;
+}
+
+h3 {
+  margin-left: 200px;
+  font-size: 40px;
+}
+footer {
+  background: rgb(75, 72, 79);
+  width: 1100px;
+  height: 120px;
+}
