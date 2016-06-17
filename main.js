@@ -56,3 +56,32 @@ var itemsWithWood = wood.map(function(item) {
 
 //-------------5-----------------------------------
 //Which items are made of eight or more materials? Display the name, number of items and the items it is made of.
+
+var manyMaterial = items.filter(function(item) {
+  var material = item.materials
+  if (material.length > 8) {
+    return item;
+  }
+});
+
+var manyMaterialItem = manyMaterial.map(function(item) {
+  return (item.title + " is made of " + item.materials.length + " materials!");
+});
+
+var materialList = manyMaterial.map(function(item) {
+  // var matsArray = item.materials;
+  return item.materials;
+  // matsArray
+});
+
+//---------------6-----------------------------------
+//How many items were made by their sellers?
+
+var whoMade = items.filter(function(item) {
+  var seller = item.who_made
+  if (seller == "i_did") {
+    return item;
+  }
+});
+
+var made = (whoMade.length + " were made by their sellers!")
