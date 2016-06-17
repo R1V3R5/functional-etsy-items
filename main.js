@@ -29,3 +29,15 @@ var betweenArray = between.map(function(item) {
 
 //--------------3----------------------------
 //Which item has a "GBP" currency code? Display it's name and price.
+var currency = items.filter(function(item) {
+  if (item.currency_code == "GBP") {
+    return item;
+  }
+});
+
+var currencyCode = currency.map(function(item) {
+  return (item.title + " costs " + item.price)
+});
+
+//---------------4-------------------------------
+//Display a list of all items who are made of wood.
