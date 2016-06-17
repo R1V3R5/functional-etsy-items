@@ -16,3 +16,16 @@ var avg = average.toFixed(2)
 
 
 //--------------2---------------------------
+//Show me how to get an array of items that cost between $14.00 and $18.00 USD
+var between = items.filter(function(item) {
+  if (item.price > 14 && item.price < 18) {
+    return item;
+  }
+});
+
+var betweenArray = between.map(function(item) {
+  return item.title;
+});
+
+//--------------3----------------------------
+//Which item has a "GBP" currency code? Display it's name and price.
