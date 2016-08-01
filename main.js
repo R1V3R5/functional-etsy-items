@@ -26,7 +26,7 @@ var betweenArray = between.map(function(item) {
 
 // console.log(betweenArray)
 betweenArray.forEach(function (title) {
-  document.getElementById("answer2").innerHTML += title + "<br />";
+  document.getElementById("answer2").innerHTML += title + "<br><br>";
 });
 
 // var answer2 = document.querySelector("#answer2");
@@ -57,11 +57,11 @@ var wood = items.filter(function(item) {
 });
 
 var itemsWithWood = wood.map(function(item) {
-  return ('* ' + item.title + " is made of wood!");
+  return (item.title + " is made of wood!");
 });
 
 itemsWithWood.forEach(function (title) {
-  document.getElementById("answer4").innerHTML += title + "<br />";
+  document.getElementById("answer4").innerHTML += title + "<br><br>";
 });
 
 
